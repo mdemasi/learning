@@ -1,13 +1,14 @@
 //
-//  PlayingDeck.m
+//  PlayingDeck.h
 //  matchismo
 //
 //  Created by Marco de Masi on 5/15/15.
 //  Copyright (c) 2015 Marco de Masi. All rights reserved.
 //
 
-#import "PlayingDeck.h"
+#import <Foundation/Foundation.h>
+#import "Deck.h"
 
-@implementation PlayingDeck
+@interface PlayingCardDeck : Deck
 
 @end

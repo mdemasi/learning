@@ -18,6 +18,22 @@
 
 @synthesize suit = _suit;
 
++ (NSArray *)validSuits
+{
+    return @[@"♥︎",@"♣︎",@"♠︎",@"♦︎"];
+}
+
+- (void)setSuit:(NSString *)suit
+{
+    if([[PlayingCard validSuits] containsObject:suit]) {
+        _suit = suit;
+    }
+}
+
+- (NSString *)suit
+{
+    return _suit ? _suit : @"?";
+}
 
 + (NSArray *)rankStrings
 {
